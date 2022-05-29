@@ -8,4 +8,4 @@ def mostrarfamilia(request):
     context = {
         "familiares" : familiares
     }
-    return render(request, "familia.html", context = context)
+    return render(request, "familia.html", context)
