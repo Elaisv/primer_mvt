@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</h1> Esta es una base de datos de tu familia. </h1> 
+
+{% if familia %}
+<ul>{% for familiares in familia %}
+    <li>
+        Nombre: {{familiares.nombre}}
+        Edad: {{familiares.edad}}
+        Fecha de nacimiento: {{familiares.fecha_nac}}
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<h4>Aun no hay familiares cargados en la base de datos </h4>
+{% endif %}
+</body>
+</html>
