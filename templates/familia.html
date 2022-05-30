@@ -9,12 +9,12 @@
 <body>
 </h1> Esta es una base de datos de tu familia. </h1> 
 
-{% if familia %}
-<ul>{% for familiares in familia %}
+{% if familiares %}
+<ul>{% for individuo in familiares %}
     <li>
-        Nombre: {{familiares.nombre}}
-        Edad: {{familiares.edad}}
-        Fecha de nacimiento: {{familiares.fecha_nac}}
+        Nombre: {{individuo.nombre}}
+        Edad: {{individuo.edad}}
+        Fecha de nacimiento: {{individuo.fecha_nac}}
     </li>
     {% endfor %}
 </ul>
